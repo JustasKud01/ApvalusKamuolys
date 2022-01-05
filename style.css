@@ -1,0 +1,656 @@
+* {
+    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+  font-size: 18 px;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  background-color: #F6F6F6;
+
+}
+header {
+  padding:0;
+  height: 90px;
+  background-color: #d9d9d9;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  z-index: 970;
+  text-transform: uppercase;
+  position: fixed;
+  object-position: top;
+
+}
+a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+/*logotipas*/
+.logo
+{
+    float: left;
+    padding-left: 60px;
+}
+/*Realus laikas*/
+#demo{
+  user-select: none;
+  display:block;
+  font-size: 20px;
+  font-family:arial;
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 0 30px;
+}
+/*Navigacijos mygtukai*/
+nav{
+  user-select: none;
+  width: 100%;
+  z-index: 999000099992;
+}
+ul {
+    z-index: 999000099992;
+    text-align: right;
+    margin: auto;
+}
+ul li
+{
+  z-index: 999000099992;
+	list-style: none;
+	display: inline-block;
+	line-height: 90px;
+}
+ul li a
+{
+  z-index: 999000099992;
+  user-select: none;
+  display:block;
+  font-size: 18px;
+  font-family:arial;
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 0 30px;
+}
+ul li a:hover
+{
+	color: red;
+}
+.userpicture {
+    border-radius: 10%;
+}
+/*baneris*/
+.banner{
+  padding-top: 100px;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+.banner-text{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/*Section naujienos*/
+section {
+  float: left;
+  width: 70%;
+  margin-bottom: 100px;
+  padding-top: 5px;
+  background-color: #F6F6F6;
+}
+.container-table {
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    padding-top: 5px;
+    background-color: #F6F6F6;
+}
+.postas {
+  height: 280px;
+  position: relative;
+  font-family: 'Lora', serif;
+  margin: 40px;
+}
+.naujienos {
+  color:red;
+  font-size: 30px;
+  text-align: center;
+}
+.postofoto {
+  border-radius: 10px;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.postofoto img {
+    border-radius: 10px 0px 0px 10px;
+}
+.icon {
+  margin-left: 35px;
+}
+.postotekstas {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  z-index: 500;
+  width: 60%;
+  height: 280px;
+  float: right;
+  background-color: white;
+}
+.postotekstas a:link {
+  text-decoration: none;
+}
+.postotekstas a:hover {
+  text-decoration: none;
+}
+.postotekstas h1{
+  overflow: hidden;
+  max-width: 100ch;
+  max-height: 4ch;
+  text-overflow: ellipsis;
+  color: red;
+  text-decoration: none;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.postotekstas h1:hover{
+  color: #F88D00;
+  text-decoration: none;
+}
+.postotekstas i{
+  text-align: right;
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+.postotekstas p{
+  overflow: hidden;
+  max-height: 6ch;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+  font-size: 1.03em;
+  color: #444;
+  text-align: left;
+  padding: 20px;
+  margin-left: 20px;
+}
+.skdaugiaubox {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.new {
+  background-color: red;
+  height: 200px;
+}
+.skdaugiaubox a {
+  margin: 20 px;
+  z-index: 99;
+  font-weight: bold;
+	background-color: #ffffff;
+	border-radius: 4px;
+	border:1px solid #f88d00;
+	display: inline-block;
+	cursor: pointer;
+	color:#f88d00;
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	padding: 13px 8px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+.skdaugiaumygtukas:hover {
+	background-color:#f88d00;
+  color: #F6F6F6;
+}
+.skdaugiaumygtukas:active {
+	position:relative;
+	top:1px;
+}
+.postinfo {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.antraste {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*Aside, ateinanciu rungtyniu laikas*/
+aside {
+  background-color:#F6F6F6;
+  float: right;
+  width: 25%;
+  margin-bottom: 100px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+.asidepostas {
+  background-color: white;
+  position: relative;
+  font-family: 'Lora', serif;
+  margin: 40px;
+  border: 1px solid #ededed;
+  background-color: white;
+  height: 280px;
+  position: relative;
+  font-family: 'Lora', serif;
+  margin: 40px;
+  border: 1px solid #ededed;
+}
+aside h2 {
+  color: red;
+}
+.asidelogo {
+}
+.spacer {
+  height: 150px;
+}
+/*Footeris*/
+footer {
+  background-color: #d9d9d9;
+  clear: both;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 75px;
+  margin-top: -200000px;
+}
+.logo2 {
+  display: block;
+  top: -10px;
+  margin: 0 auto;
+  border: 0;
+  position: relative;
+}
+/*rezultatų ir tvarkaraščio puslapio lentelė*/
+.lent {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+.lent td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+.lent th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.lent tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/*Reg ir login mygtukai ir logo*/
+.loginbutton {
+  user-select: none;
+  background-color: #F88D00;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: right;
+}
+.loginLogo {
+  width: 10%;
+}
+.container {
+  padding: 16px;
+  min-height: 200px;
+}
+.loginbutton:hover {
+  opacity: 0.6;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 100px 0 12px 0;
+}
+/* Reg ir login input box'ai */
+input[type=text], input[type=password], input[type=email], textarea[type=text], input[type=file]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+}
+input[type=file] {
+  width: 90%;
+}
+/* Banerio linija su pav.*/
+.hrtop {
+    background: url('lenta.png') no-repeat top center;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    height: 40px;
+    border: 0;
+    z-index: 999;
+    position: fixed;
+    top: 79px;
+}
+.hrtop:before,
+.hrtop:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #a6a6a6;
+    height: 2px;
+    z-index: -9999999;
+    top: 10px;
+}
+.hrtop:before {
+    left: 0;
+    z-index:-9999999;
+    right: 50%;
+    margin-right: 21px;
+}
+.hrtop:after {
+    z-index: -9999999;
+    right: 0;
+    left: 50%;
+    margin-left: 21px;
+}
+.hrbottom {
+    background: url('lenta.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 40px;
+    border: 0;
+    position: relative;
+    top: -6px;
+}
+.hrbottom:before,
+.hrbottom:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #a6a6a6;
+    height: 2px;
+    top: 10px;
+}
+.hrbottom:before {
+    left: 0;
+    right: 50%;
+    margin-right: 21px;
+}
+.hrbottom:after {
+    right: 0;
+    left: 50%;
+    margin-left: 21px;
+}
+.hrfooter {
+    background: url('lenta.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 40px;
+    border: 0;
+    position: relative;
+}
+.hrfooter:before,
+.hrfooter:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #a6a6a6;
+    height: 2px;
+    top: 10px;
+}
+.hrfooter:before {
+    left: 0;
+    right: 50%;
+    margin-right: 21px;
+}
+.hrfooter:after {
+    right: 0;
+    left: 50%;
+    margin-left: 21px;
+}
+.btn-full{
+  background-color: #F88D00;
+  color: white;
+  padding: 20px 20px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 20 px;
+  margin-left: 33%;
+  border: none;
+  cursor: pointer;
+  width: 33%;
+  text-decoration:none;
+}
+.btn-full:hover {
+  opacity: 0.6;
+}
+.lygos {
+  font-size: 20px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+.readmore {
+  border-top: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  position: relative;
+  font-family: 'Lora', serif;
+  margin: 40px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.readmorefoto {
+  padding-top: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.readmorefoto img {
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  -moz-border-image: url() 0 0 0 0 repeat stretch;
+  -webkit-border-image: url() 0 0 0 0 repeat stretch;
+  -o-border-image: url() 0 0 0 0 repeat stretch;
+  border-image: url() 0 0 0 0 repeat stretch;
+}
+.readmoretekstas {
+  position: relative;
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  border-bottom: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  z-index: 500;
+  background-color: white;
+  width: 100%;
+  float: right;
+}
+
+.readmoretekstas h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.readmoretekstas h1 textarea{
+  width: 100%;
+  height: 70px;
+  resize: none;
+  text-align: center;
+}
+.readmoretekstas i{
+    text-align: right;
+}
+.readmoretekstas p{
+  width: 95%;
+  color: #444;
+  text-align: left;
+  padding: 20px;
+  margin-left: 20px;
+}
+.readmoretekstas p textarea{
+  width: 100%;
+  resize: none;
+  height: 700px;
+}
+.ptekstas {
+  width: 100%;
+  height: 500px;
+}
+.Selectbox {
+  text-align-last:right;
+  padding-right: 29px;
+}
+
+.komentaras {
+  padding-top: 20px;
+  margin-left: 40px;
+  border: 1px solid #ededed;
+  margin-top: 5%;
+  position: relative;
+  font-family: 'Lora', serif;
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+.komentarasfoto {
+  width: 20%;
+  height: 150px;
+  float: left;
+}
+.komentarasfoto a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #F88D00;
+}
+.komentarasfoto a img {
+  padding: 32px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.komentarasfoto span {
+    display: block;
+}
+.komentarastekstas {
+    width: 80%;
+    height: 150px;
+    float: right;
+}
+.komentarastekstas h3 {
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.komentarastekstas p {
+  text-align: left;
+  font-size: 20px;
+  overflow: hidden;
+  max-height: 10ch;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+  color: #444;
+  padding-right: 10px;
+}
+.komentarastekstas textarea {
+  height: 100px;
+  resize: none;
+  float: left;
+  width: 90%;
+}
+.komentarastekstas button {
+  float: left;
+  width: 90%;
+}
+/*Hamburger meniu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #D9D9D9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 120px;
+}
+
+.sidenav a {
+  z-index: 999000099992;
+  user-select: none;
+  display:block;
+  font-size: 20px;
+  font-family:arial;
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 20px 10px;
+}
+
+.sidenav a:hover {
+	color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 14px;
+  padding-right: 26px;
+  font-size: 58px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ddd;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e30d00;
+}
+.userbox  {
+  width: 80%;
+  margin: auto;
+}
